@@ -1,0 +1,110 @@
+@import color
+
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+
+html
+	font-size: 62.5%
+
+html, body
+	height: 100%
+
+body
+	font: 1.6rem/1 Helvetica, Arial, sans-serif
+	background: $darkMainColor
+	color: $lightMainColor
+
+ul
+	list-style-type: none
+
+.hide
+	display: none
+
+.app-container
+	width: 90%
+	margin: 5rem auto
+
+.component
+	margin-bottom: 2rem
+	outline: 1px solid #ccc
+	padding: 1rem
+
+.search-input
+	border: 1px solid #ccc
+	background: #333
+	color: $lightMainColor
+	height: 4.2rem
+	width: 100%
+	display: block
+	font-size: 2rem
+	line-height: 4.2rem
+	padding: 0 1.2rem
+
+.user-tool .tool,
+.tool__title
+	display: inline-block
+
+.tool__label
+	width: 3rem
+	height: 3rem
+	display: inline-block
+	vertical-align: middle
+
+.alphabet-sort__item
+	margin-right: 3rem
+	& .tool__label
+		background: darkorange
+
+.age-sort__item .tool__label
+	background: deepskyblue
+
+.user-data
+	display: flex
+
+.user-list
+	flex: 2
+
+.user-bar
+	flex: 1
+	vertical-align: top
+	margin-left: 2rem
+
+.user-list__item
+	border: 1px solid $darkBlueColor
+	display: flex
+	&:hover
+		cursor: pointer
+	
+	&+.user-list__item
+		border-top: none
+	div
+		display: flex
+		align-items: center
+		justify-content: center
+		min-height: 6rem
+		border-left: 1px solid $darkBlueColor
+.user__image, .user__age,
+	flex: 2
+
+.user__name, .user__phone
+	flex: 3
+
+.user-bar__list
+	display: flex
+	flex-direction: column
+	margin-top: 2rem
+
+.user-bar__item
+	display: flex
+	min-height: 5rem
+	div
+		text-align: center
+	& :first-child
+		flex: 1
+	& :last-child
+		flex: 2
+
+.user-bar__phrase
+	line-height: 1.4
